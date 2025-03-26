@@ -1,31 +1,33 @@
-/* Geral */
+/* Configuração geral do body */
 body {
-  font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  height: 100vh;
   margin: 0;
+  padding: 0;
+  background-color: #000000;
 }
 
-/* Parte superior (header) */
+/* Header */
 header {
+  margin-right: 85%;
+  margin-top: 10px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
+  background-color: #a37409;
+  border-radius: 45px;
+  height: 50px;
+  width: 14%;
 }
 
 #titulo {
   text-align: center;
-  background-color: rgb(0, 228, 228);
-  border-radius: 45px;
-  height: 50px;
-  width: 50%;
-  line-height: 50px;
   font-size: 1.5rem;
   color: white;
+  margin-left: 15px;
 }
 
 /* Container principal */
@@ -34,80 +36,45 @@ header {
   flex-direction: column;
   align-items: center;
   width: 80%;
-  gap: 30px; /* Espaçamento entre a história e os outros blocos */
+  gap: 30px;
   padding: 20px;
 }
 
 /* História */
 .divhistoria {
-  background-color: rgb(56, 80, 100);
+  font-family: "Poppins", sans-serif;
+  font-size: larger;
+  background-color: #a37409;
   color: rgb(214, 214, 214);
   padding: 20px;
-  width: 100%;
   border-radius: 15px;
 }
+.divproposito {
+  font-family: "Poppins", sans-serif;
 
-/* Layout de Propósito e Serviços */
-#propositoservicos {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 colunas (lado a lado) */
-  gap: 20px; /* Espaçamento entre as colunas */
-  width: 100%;
-}
-
-/* Estilo de Propósito */
-.classproposito {
-  background-color: rgb(56, 80, 100);
+  background-color: #a37409;
   color: rgb(214, 214, 214);
   padding: 20px;
   border-radius: 15px;
 }
 
-/* Estilo dos Serviços */
+/* Serviços Centralizados */
 #servicos {
+  font-family: "Poppins", sans-serif;
+
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  background-color: rgb(56, 80, 100);
+  align-items: center;
+  text-align: center;
+  background-color: #a37409;
   color: rgb(214, 214, 214);
   padding: 20px;
   border-radius: 15px;
+  width: 70%; /* Largura menor para centralizar melhor */
 }
 
-/* Estilo de textos de serviços */
-#textoservico {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
+/* Título dos serviços */
 #servicoh3 {
   font-size: 2rem;
   margin-bottom: 10px;
-}
-
-/* Media Query para telas pequenas (como celulares) */
-@media (max-width: 768px) {
-  /* Ajustando o container e o layout para telas menores */
-  #container {
-    width: 95%; /* Diminuindo a largura para deixar mais espaço nas bordas */
-    padding: 10px;
-  }
-
-  /* Mudando o layout para uma coluna em telas pequenas */
-  #propositoservicos {
-    display: flex;
-    flex-direction: column; /* Empilhando o Propósito e Serviços */
-    gap: 20px; /* Espaçamento entre as seções */
-  }
-
-  /* Ajustando a largura das seções para 100% */
-  .classproposito,
-  #servicos {
-    width: 100%;
-  }
-
-  #titulo {
-    width: 90%; /* Ajustando o título para telas pequenas */
-  }
 }
